@@ -56,70 +56,76 @@
     </div>
 
     <!-- This is the table-of-content component use to define all of the link directly to each section -->
-    <div class="table-of-content">
-      <h2>Table of Contents</h2>
-      <sl-tree>
-        <sl-tree-item expanded>
-          <a href="#introduction">1. Introduction</a>
-        </sl-tree-item>
-
-        <sl-tree-item expanded>
-          <a href="#projectclarification">2. Project Clarification</a>
-          <sl-tree-item>
-            <a href="#projectclarification-problem">2.1. Problem Clarification</a>
-          </sl-tree-item>
-          <sl-tree-item>
-            <a href="#projectclarification-valueproposition">2.2. Value Proposition</a>
-          </sl-tree-item>
-          <sl-tree-item>
-            <a href="#projectclarification-designmethodology">2.3. Design Methodology</a>
-          </sl-tree-item>
-        </sl-tree-item>
-
-        <sl-tree-item expanded>
-          <a href="#conceptdesign">3. Concept Design</a>
-          <sl-tree-item>
-            <a href="#conceptdesign-conceptdevelopment">3.1. Concept Development</a>
-          </sl-tree-item>
-          <sl-tree-item>
-            <a href="#conceptdesign-designsolution">3.2. Design Solution</a>
-          </sl-tree-item>
-          <sl-tree-item>
-            <a href="#conceptdesign-reasoningofdesignsolution">3.3. Reasoning of Design Solution</a>
-          </sl-tree-item>
-        </sl-tree-item>
-
-        <sl-tree-item expanded>
-          <a href="#prototyping-testing">4. Prototyping / Testing Strategy</a>
-        </sl-tree-item>
-
-        sl-tree-item expanded>
-          <a href="#further-development">5. Further Development Pan</a>
-        </sl-tree-item>
-
-        sl-tree-item expanded>
-          <a href="#conclusion">6. Conclusion</a>
-        </sl-tree-item>
-
-        <sl-tree-item>
-          <a href="#references">References</a>
-        </sl-tree-item>
-      </sl-tree>
-    </div>
-    <sl-divider></sl-divider>
+    <h2>Table of Contents</h2>
+    <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#project-clarification">Project Clarification</a>
+            <ol>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#minimizing-operating-costs">Minimizing Operating Costs</a>
+                    <ul>
+                        <li><a href="#single-aircraft-fleet">Single aircraft fleet</a></li>
+                        <li><a href="#single-cabin-configuration">Single cabin configuration</a></li>
+                        <li><a href="#choosing-secondary-airports">Choosing secondary airports</a></li>
+                    </ul>
+                </li>
+                <li><a href="#leasing-vs-owning-aircraft">Leasing vs Owning Aircraft</a></li>
+                <li><a href="#problem-clarification">Problem Clarification</a>
+                    <ul>
+                        <li><a href="#price-comfort-deciding-factors">Price and comfort as deciding factors for passengers</a></li>
+                        <li><a href="#role-seat-eliminating-discomfort">The role of a seat in eliminating discomfort</a></li>
+                    </ul>
+                </li>
+                <li><a href="#value-proposition">Value Proposition</a></li>
+                <li><a href="#project-scope">Project Scope</a></li>
+                <li><a href="#design-methodology">Design Methodology</a>
+                    <ul>
+                        <li><a href="#freedom-design-safety">Freedom in Design and Safety Requirements</a></li>
+                        <li><a href="#design-considerations">Design considerations</a></li>
+                        <li><a href="#design-approach">Design approach</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li><a href="#ideation">Ideation</a>
+            <ol>
+                <li><a href="#sketches">Sketches</a></li>
+                <li><a href="#rapid-cardboard-prototyping">Rapid Cardboard Prototyping</a></li>
+                <li><a href="#selected-design-concepts">Selected Design Concepts</a></li>
+            </ol>
+        </li>
+        <li><a href="#prototyping-testing">Prototyping and Testing</a>
+            <ol>
+                <li><a href="#cad-models">CAD Models</a></li>
+                <li><a href="#refined-cardboard-prototypes">Refined Cardboard Prototypes</a></li>
+                <li><a href="#selected-core-concept">Selected Core Concept</a></li>
+            </ol>
+        </li>
+        <li><a href="#further-development-plan">Further Development Plan</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+    </ol>
+    <p><a href="#references">References</a></p>
 
     <div>
-
-      <!-- This is an example of what a section might look like -->
-      <div id="introduction">
-        <h2> 1. Introduction </h2>
+      <!-- Acknowledgement Section -->
+      <div id="acknowledgement">
+        <h2>Acknowledgement</h2>
         <p>
-          The current design of economy-class seats in low-cost carriers (LCCs) falls short in addressing passenger comfort, especially on long-haul flights. Limited legroom, constrained seating posture, and lack of adjustability for diverse seating preferences contribute to common discomforts such as fatigue, stiffness, poor posture, and leg heaviness. This project seeks to create an innovative aircraft seat design that enhances comfort within the constraints of LCCs, aiming to improve passenger experience and offer LCCs a new competitive advantage beyond pricing.
+          <!-- Enter acknowledgement content here -->
         </p>
       </div>
     </div>
-
-
+    
+    <div>
+      <!-- Introduction Section -->
+      <div id="introduction">
+        <h2>1. Introduction</h2>
+        <p>
+          In recent years, as the impact of the pandemic  has begun to wane, there has been a surge in leisure travel [1]. Unlike business travelers, many leisure travelers choose to fly an airline based on ticket prices, often opting to fly Low-Cost Carriers (LCCs) [1] [2]. While economy class seats on-board an LCC are not comfortable to begin with due to prioritizing maximizing seat count and minimizing costs, this discomfort becomes even more apparent on long-haul flights, flights over six hours long, which majority of leisure flyers are embarking on [3]. As such, passengers are starting to choose airlines based on comfort along with price [4]. Since this comfort is readily available on Full-Service Carriers (FSCs), it becomes easier to choose them over LCCs. Therefore, there is a need to re-design economy class seats for LCCs to eliminate discomfort, especially on long-haul flights, to improve passenger experience and introduce a new competitive factor for LCCs.  
+        </p>
+      </div>
+    </div>
+    
     <br />
     <br />
     <sl-divider></sl-divider>
@@ -127,32 +133,37 @@
       <div id="projectclarification">
         <h2>2. Project Clarification</h2>
         <p>
-          blank
+          <!-- Enter project clarification content here -->
         </p>
       </div>
-
+    
       <div id="projectclarification-problem">
         <h3>2.1. Problem Clarification</h3>
         <p>
-          Background (literature review, history), Standards and requirements, Anatomy
+          An LCC, contrary to popular belief, focuses on minimizing operating costs rather than offering low ticket prices; it is the opposite to an FSC. For example, Singapore Airlines is an FSC while Scoot is an LCC. There are three main ways through which an LCC minimizes operational costs:
+1)	Using fewer aircraft models
+2)	Having single cabin configurations
+3)	Choosing to operate out of secondary airports
+Their ticket pricing mechanism, which will not be discussed in this report, revolves around offering minimum amenities needed for transporting a person from point A to point B as a part of the ticket price while imposing additional charges for incentives such as in-flight meals and check-in baggage. With lower operating costs, cost savings can be passed on to the traveler, encouraging more passengers to travel [5].
+
         </p>
       </div>
-
+    
       <div id="projectclarification-valueproposition">
         <h3>2.2. Value Proposition</h3>
         <p>
-          Comfort as in increasingly important decision factor, why focus on seats
+          <!-- Enter value proposition content here -->
         </p>
       </div>
-
+    
       <div id="projectclarification-designmethodology">
         <h3>2.3. Design Methodology</h3>
         <p>
-          approach (original prototyping plan, rapid prototyping as a way to explore ideas)
+          <!-- Enter design methodology content here -->
         </p>
       </div>
     </div>
-
+    
     <br />
     <br />
     <sl-divider></sl-divider>
@@ -160,46 +171,46 @@
       <div id="conceptdesign">
         <h2>3. Concept Design</h2>
         <p>
-           
+          <!-- Enter concept design content here -->
         </p>
       </div>
-
+    
       <div id="conceptdesign-conceptdevelopment">
         <h3>3.1. Concept Development</h3>
         <p>
-           
+          <!-- Enter concept development content here -->
         </p>
       </div>
-
+    
       <div id="conceptdesign-conceptdevelopment-1">
         <h4>3.1.1 Sketches</h4>
         <p>
-           n evaluation
+          <!-- Enter sketches content here -->
         </p>
       </div>
-
+    
       <div id="conceptdesign-conceptdevelopment-2">
         <h4>3.1.2 Rapid Prototypes: Cardboard</h4>
         <p>
-           principles, evaluation
+          <!-- Enter rapid prototypes content here -->
         </p>
       </div>
-
+    
       <div id="conceptdesign-designsolution">
         <h3>3.2. Design Solution</h3>
         <p>
-          the two we chose to carry on with
+          <!-- Enter design solution content here -->
         </p>
       </div>
-
+    
       <div id="conceptdesign-reasoningofdesignsolution">
         <h3>3.3. Reasoning of Design Solution</h3>
         <p>
-          evaluate the two solutions preliminarily and emphasise potential for further development
+          <!-- Enter reasoning of design solution content here -->
         </p>
       </div>
     </div>
-
+    
     <br />
     <br />
     <sl-divider></sl-divider>
@@ -207,46 +218,46 @@
       <div id="prototyping-testing">
         <h2>4. Prototyping / Testing Strategy</h2>
         <p>
-          testy
+          <!-- Enter prototyping/testing strategy content here -->
         </p>
       </div>
-
+    
       <div id="prototyping-testing-1">
         <h4>4.1 CAD Models</h4>
         <p>
-           
+          <!-- Enter CAD models content here -->
         </p>
       </div>
-
+    
       <div id="prototyping-testing-2">
         <h4>4.2 Refined Craftboard Prototypes</h4>
         <p>
-           
+          <!-- Enter refined craftboard prototypes content here -->
         </p>
       </div>
-
+    
       <div id="prototyping-testing-3">
         <h4>4.3 Refined CAD Models</h4>
         <p>
-           
+          <!-- Enter refined CAD models content here -->
         </p>
       </div>
-
+    
       <div id="prototyping-testing-4">
         <h4>4.4 Acrylic Prototypes</h4>
         <p>
-           
+          <!-- Enter acrylic prototypes content here -->
         </p>
       </div>
-
+    
       <div id="prototyping-testing-5">
         <h4>4.5 User Testing Model Prototypes</h4>
         <p>
-           
+          <!-- Enter user testing model prototypes content here -->
         </p>
       </div>
     </div>
-
+    
     <br />
     <br />
     <sl-divider></sl-divider>
@@ -254,11 +265,11 @@
       <div id="further-development">
         <h2>5. Further Development Plan</h2>
         <p>
-          defining comfort index scale for user testing, homogenous prototype testing plan, gantt chart
+          <!-- Enter further development plan content here -->
         </p>
       </div>
     </div>
-
+    
     <br />
     <br />
     <sl-divider></sl-divider>
@@ -266,52 +277,45 @@
       <div id="conclusion">
         <h2>6. Conclusion</h2>
         <p>
-          testy
+          <!-- Enter conclusion content here -->
         </p>
       </div>
     </div>
-
-
-    <!-- This is an example of how you can use the references component to create references -->
+    
+    <!-- References Section -->
     <div id="references" class="references">
       <sl-divider></sl-divider>
       <h2>References</h2>
       <ul>
         <li>
-          Brody, J. E. (2007, December 11). Mental reserves keep brain agile. The New York Times. Retrieved from
-          http://www.dowjones.com/factiva/
+          <!-- Enter reference 1 here -->
         </li>
         <li>
-          Chamberlin, J., Novotney, A., Packard, E., & Price, M. (2008, May). Enhancing worker well-being: Occupational
-          health psychologists convene to share their research on work, stress, and health. Monitor on Psychology,
-          39(5), 26-29.
+          <!-- Enter reference 2 here -->
         </li>
         <li>
-          Jones, T. J., & Fields, N. (2003). Emotional quotient and personality. E-Journal of Applied Psychology, 2(2),
-          38-45. Retrieved from http://ejournalappliedpsyc/index.php/ejap
+          <!-- Enter reference 3 here -->
         </li>
       </ul>
     </div>
-  </div>
-
-  <br />
+    
+    <br />
     <br />
     <sl-divider></sl-divider>
     <div>
-      <div id="Appendix">
+      <div id="appendix">
         <h2>Appendix</h2>
         <p>
-          <!-- This is an example of how you might use the video component -->
-          <video-component tag="rick" source="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          subtitle="Video: Never gonna give you up?"></video-component>
-
-          <!-- This is an example of how you might use the table component -->
+          <!-- Additional content, videos, or tables for appendix -->
+          <video-component tag="rick" source="https://www.youtube.com/embed/dQw4w9WgXcQ" subtitle="Video: Never gonna give you up?"></video-component>
+    
           <table-component subtitle="Table: Demo table">
-          <div id="table-1"></div>
+            <div id="table-1"></div>
           </table-component>
         </p>
       </div>
     </div>
+    
 
   <!-- This is the code to display the scroll to top button for ergonomic -->
   <!-- You can leave it as it is, or if you don't like its aesthetics you can also just delete it, -->
